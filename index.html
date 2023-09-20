@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ce320d3db8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Choco Parlour</title>
+</head>
+
+<body class="bg-body-secondary">
+    <!-- Nav -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-3 sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bolder" href="./index.html"><img src="./logo.png" alt="Logo" width="30"
+                    height="24" class="d-inline-block align-text-top">
+                Choco Parlour</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal"
+                            data-bs-target="#cart"><i class="fa-solid fa-cart-shopping"></i> Cart
+                            (<span class="total-count"></span>)</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="clear-cart btn btn-danger"><i class="fa-solid fa-trash"></i> Clear
+                            Cart</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Main -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card p-2" style="width: 20rem;">
+                    <img src="https://imgmediagumlet.lbb.in/media/2021/05/609d3098fedbcd581b25ed7b_1620914328594.jpg?fm=webp&w=750&h=500&dpr=1"
+                        alt="Card image cap">
+                    <div class="card-block mx-auto">
+                        <h4 class="card-title">Mason</h4>
+                        <p class="card-text">Price: &#8377;295</p>
+                        <a href="#" data-name="Mason" data-price="295" class="add-to-cart btn btn-primary">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-2" style="width: 20rem;">
+                    <img src="https://imgmediagumlet.lbb.in/media/2021/05/609d3098fedbcd581b25ed7c_1620914328607.jpg?fm=webp&w=750&h=500&dpr=1"
+                        alt="Card image cap">
+                    <div class="card-block mx-auto">
+                        <h4 class="card-title">Naviluna</h4>
+                        <p class="card-text">Price: &#8377;390</p>
+                        <a href="#" data-name="Naviluna" data-price="390" class="add-to-cart btn btn-primary">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col">
+                <div class="card p-2" style="width: 20rem;">
+                    <img src="https://imgmediagumlet.lbb.in/media/2022/11/637f2b50aadafc2ed15ca63a_1669278544332.jpg?fm=webp&w=750&h=500&dpr=1"
+                        alt="Card image cap">
+                    <div class="card-block mx-auto">
+                        <h4 class="card-title">Soklet</h4>
+                        <p class="card-text">Price: &#8377;200</p>
+                        <a href="#" data-name="Soklet" data-price="200" class="add-to-cart btn btn-primary">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-2" style="width: 20rem;">
+                    <img src="https://imgmediagumlet.lbb.in/media/2021/05/609d3098fedbcd581b25ed7d_1620914328631.jpg?fm=webp&w=750&h=500&dpr=1"
+                        alt="Card image cap">
+                    <div class="card-block mx-auto">
+                        <h4 class="card-title">Pascati</h4>
+                        <p class="card-text">Price: &#8377;180</p>
+                        <a href="#" data-name="Pascati" data-price="180" class="add-to-cart btn btn-primary">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-2" style="width: 20rem;">
+                    <img src="https://imgmediagumlet.lbb.in/media/2021/05/609d3098fedbcd581b25ed78_1620914328070.jpg?fm=webp&w=750&h=500&dpr=1"
+                        alt="Card image cap">
+                    <div class="card-block mx-auto">
+                        <h4 class="card-title">Darkins</h4>
+                        <p class="card-text">Price: &#8377;295</p>
+                        <a href="#" data-name="Darkins" data-price="295" class="add-to-cart btn btn-primary">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card p-2" style="width: 20rem;">
+                    <img src="https://imgmediagumlet.lbb.in/media/2021/05/609d3098fedbcd581b25ed75_1620914328063.jpg?fm=webp&w=750&h=500&dpr=1"
+                        alt="Card image cap">
+                    <div class="card-block mx-auto">
+                        <h4 class="card-title">Chockriti</h4>
+                        <p class="card-text">Price: &#8377;290</p>
+                        <a href="#" data-name="Chockriti" data-price="290" class="add-to-cart btn btn-primary">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col">
+                <div class="card p-2" style="width: 20rem;">
+                    <img src="https://imgmediagumlet.lbb.in/media/2021/05/609d3098fedbcd581b25ed7e_1620914328643.jpg?fm=webp&w=750&h=500&dpr=1"
+                        alt="Card image cap">
+                    <div class="card-block mx-auto">
+                        <h4 class="card-title">Toska</h4>
+                        <p class="card-text">Price: &#8377;290</p>
+                        <a href="#" data-name="Toska" data-price="295" class="add-to-cart btn btn-primary">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-2" style="width: 20rem;">
+                    <img src="https://imgmediagumlet.lbb.in/media/2021/05/609d3099fedbcd581b25ed7f_1620914329010.jpg?fm=webp&w=750&h=500&dpr=1"
+                        alt="Card image cap">
+                    <div class="card-block mx-auto">
+                        <h4 class="card-title">Zevic</h4>
+                        <p class="card-text">Price: &#8377;135</p>
+                        <a href="#" data-name="Zevic" data-price="135" class="add-to-cart btn btn-primary">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2" style="width: 20rem;">
+                    <img src="https://imgmediagumlet.lbb.in/media/2022/11/637f28b5aadafc2ed15ca39e_1669277877190.jpg?fm=webp&w=750&h=500&dpr=1"
+                        alt="Card image cap">
+                    <div class="card-block mx-auto">
+                        <h4 class="card-title">Savorworks</h4>
+                        <p class="card-text">Price: &#8377;200</p>
+                        <a href="#" data-name="Savorworks" data-price="200" class="add-to-cart btn btn-primary">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-5" id="exampleModalLabel">Cart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="show-cart table">
+
+                        </table>
+                        <div>Total price: &#8377; <span class="total-cart"></span></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Order now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
+</body>
+
+</html>
